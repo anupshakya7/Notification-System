@@ -26,7 +26,7 @@ class NotificationController extends Controller
             userId: $data['user_id'],
             type: $data['type'],
             recipient: $data['recipient'],
-            subject: $data['subject'],
+            subject: $data['subject'] ?? 'Test Notification',
             payload: $data['payload'],
         );
 
